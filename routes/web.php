@@ -29,8 +29,9 @@ Route::get('/enseignts/index', [EnseignantController::class, 'index'])->name('en
 Route::post('/enseignants/store', [EnseignantController::class, 'store'])->name('enseignant.store');
 Route::get('/enseigants/create', [EnseignantController::class, 'create'])->name('enseignant.create');
 Route::get('/enseigants/cours', [EnseignantController::class, 'cours'])->name('enseignant.cours');
-
-
+Route::delete('/enseigants/delete/{id}', [EnseignantController::class, 'delete'])->name('enseignant.delete');
+Route::get('/enseigants/edit/{id}', [EnseignantController::class, 'edit'])->name('enseignant.edit');
+Route::put('/enseigants/update/{id}', [EnseignantController::class, 'update'])->name('enseignant.update');
 
 Route::get('/modules/create', [ModuleController::class, 'create'])->name('module.create');
 Route::post('/modules/store', [ModuleController::class, 'store'])->name('module.store');

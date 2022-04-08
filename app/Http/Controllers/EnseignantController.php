@@ -42,7 +42,8 @@ class EnseignantController extends Controller
     }
 
     public function delete($id){
-        return view('');
+        $data= Enseignant::where('id',$id);
+        $data->delete();
     }
 
     public function cours(){
