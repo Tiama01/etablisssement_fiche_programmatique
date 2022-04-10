@@ -33,17 +33,39 @@ class EnseignantController extends Controller
         return view('enseignants.index');
     }
 
-    public function edit(Request $request,$id){
-        return view('');
+    public function show(){
+
+        return view('enseignants.show');
+    }
+
+    public function edit($id){
+        $data=Enseignant::findOrFail($id);
+        return view('enseignants.edit',compact('data'));
     }
 
     public function update(Request $request,$id){
-        return view('');
+        $request->validate([
+            'matricule' => 'required|matricule',
+            'Nom' => 'required',
+            'Prenom' => 'required',
+            'mail' => 'required|mail',
+            'Telephone' => 'required'
+        ]);
+        $data=Enseignant::findOrFail($id);
+        $data ->matricule = $request->get ('matricule');
+        $data ->Nom = $request->get ('Nom');
+        $data ->Prenom = $request->get ('Prenom');
+        $data ->mail = $request->get ('mail');
+        $data ->Telephone = $request->get ('Telephone');
+        $data ->save();
+        return redirect()->route('enseignant.index')->with('mise à jour reussi');
+        // return redirect()->route("enseignants.index");
     }
 
     public function delete($id){
         $data= Enseignant::where('id',$id);
         $data->delete();
+        return redirect()->route("enseignant.index");
     }
 
     public function cours(){

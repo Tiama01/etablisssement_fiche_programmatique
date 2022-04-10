@@ -31,9 +31,10 @@
                     <td>{{ $enseignants ->mail}}</td>
                     <td>{{ $enseignants ->Telephone}}</td>
                     <td>
+
                         <form action="{{ route('enseignant.delete', ['id'=>$enseignants->id]) }}" method="POST">
-                            <a class="btn btn-info" href="">Voir</a>
-                            <a class="btn btn-primary" href="">Modifier</a>
+                            <a class="btn btn-info" href="{{ route('enseignant.show') }}">Voir</a>
+                            <a class="btn btn-primary" href="{{ url('enseignant.edit'.$enseignants->id) }}">Modifier</a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Supprimer</button>

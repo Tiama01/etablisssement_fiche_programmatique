@@ -28,6 +28,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/enseignts/index', [EnseignantController::class, 'index'])->name('enseignant.index');
 Route::post('/enseignants/store', [EnseignantController::class, 'store'])->name('enseignant.store');
 Route::get('/enseigants/create', [EnseignantController::class, 'create'])->name('enseignant.create');
+Route::get('/enseigants/show', [EnseignantController::class, 'show'])->name('enseignant.show');
 Route::get('/enseigants/cours', [EnseignantController::class, 'cours'])->name('enseignant.cours');
 Route::delete('/enseigants/delete/{id}', [EnseignantController::class, 'delete'])->name('enseignant.delete');
 Route::get('/enseigants/edit/{id}', [EnseignantController::class, 'edit'])->name('enseignant.edit');

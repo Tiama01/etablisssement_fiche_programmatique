@@ -15,15 +15,16 @@ return new class extends Migration
     {
         Schema::create('modules', function (Blueprint $table) {
             $table->id();
-            $table->string("codemod")->unique();
+            $table->string("codemod")->nullable();
             $table->string("libmod");
-            $table->string("creditmod");
-            $table->string("vh_ct")->unique();
+            $table->string("credit");
+            $table->string("vh_ct");
             $table->string("vh_td");
             $table->string("vh_tp");
             $table->string("poids");
             $table->foreignId('enseignant_id')->constrained();
             $table->foreignId('ue_id')->constrained();
+            $table->foreignId('semestre_id')->constrained();
             // $table->string("codeUE");
             // $table->string("codeEns");
             $table->timestamps();

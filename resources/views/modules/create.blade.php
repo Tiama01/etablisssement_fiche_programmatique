@@ -18,23 +18,17 @@
             {!! csrf_field() !!}
             <div class="row">
                 <div class="row">
-                <div class="form-group col-md-4 ">
-                    <label class="">Code</label>
-                    <select class="form-select" name="codemod"  style="width: 100%; height: 36px">
-                        <option>Select</option>
-                        <option value="Cd">CA</option>
-                        <option value="DG">IPV6</option>
-                        <option value="DG">Proba</option>
-                        </optgroup>
-                    </select>
-                </div>
+                    <div class="form-group col-md-4" >
+                        <label for="exampleInputEmail1">Code</label>
+                        <input type="text" class="form-control" name="codemod" placeholder="Entrez le code du module">
+                    </div>
                 <div class="form-group col-md-4" >
                     <label for="exampleInputEmail1">Libellé</label>
                     <input type="text" class="form-control" name="libmod" id="prenom" placeholder="Entrez le libellé du module">
                 </div>
                 <div class="form-group col-md-4" >
                     <label for="exampleInputEmail1">Credit:</label>
-                    <input type="number" class="form-control" min="0" value="0" name="creditmod" id="contact" placeholder="Entrez le credit du module">
+                    <input type="number" class="form-control" min="0" value="0" name="credit" id="contact" placeholder="Entrez le credit du module">
                 </div>
                 <div class="form-group col-md-4" >
                     <label for="exampleInputEmail1">CT:</label>
@@ -57,17 +51,20 @@
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">Semestre</label>
-                    <select class="form-select" name="codemod"  style="width: 100%; height: 36px">
+                    <select class="form-select" name="enseignant_id"  style="width: 100%; height: 36px">
                         <option>Select</option>
-                        <option value="Cd">Semestre 1</option>
-                        <option value="DG">Semestre 2</option>
-                        <option value="DG">Semestre 3</option>
+                        <option value="S1">Semestre 1</option>
+                        <option value="S2">Semestre 2</option>
+                        <option value="S3">Semestre 3</option>
+                        <option value="S4">Semestre 4</option>
+                        <option value="S5">Semestre 5</option>
+                        <option value="S6">Semestre 6</option>
                         </optgroup>
                     </select>
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">UE</label>
-                    <select class="form-select bg-body" name="codemod"  style="width: 100%; height: 36px">
+                    <select class="form-select bg-body" name="ue_id"  style="width: 100%; height: 36px">
                         <option>Select</option>
                         <option value="Cd">CA</option>
                         <option value="DG">IPV6</option>
@@ -75,7 +72,7 @@
                         </optgroup>
                     </select>
                 </div>
-                <div class="form-group col-md-4 ">
+                {{-- <div class="form-group col-md-4 ">
                     <label class="">Classe</label>
                     <select class="form-select bg-body" name="codemod"  style="width: 100%; height: 36px">
                         <option>Select</option>
@@ -84,7 +81,7 @@
                         <option value="DG">ABF3</option>
                         </optgroup>
                     </select>
-                </div>
+                </div> --}}
 
                 <div class="form-group col-md-4" >
                     <label for="exampleInputEmail1">Enseignant</label>
@@ -94,7 +91,7 @@
 
             </div>
             <div class="form-group col-md-4">
-                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                <button type="submit" class="btn btn-secondary">Enregistrer</button>
            </div>
             </div>
 
