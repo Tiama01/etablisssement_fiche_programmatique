@@ -12,4 +12,9 @@ class Enseignant extends Model
     'id',
 ];
     use HasFactory;
+
+    public function modules()
+    {
+        return $this->belongsTo(Module::class);
+    }
 }

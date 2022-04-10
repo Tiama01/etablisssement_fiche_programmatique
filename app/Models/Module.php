@@ -11,4 +11,9 @@ class Module extends Model
         'id',
     ];
     use HasFactory;
+
+    public function enseignants()
+    {
+        return $this->hasMany(enseignant::class);
+    }
 }

@@ -22,8 +22,8 @@
             <th scope="col">TP</th>
             <th scope="col">poids</th>
             <th scope="col">Semestre</th>
-            <th scope="col">Classe</th>
             <th scope="col">UE</th>
+            <th scope="col">Enseigant</th>
             <th scope="col">Action</th>
         </tr>
         </thead>
@@ -33,14 +33,14 @@
                     <th scope="row">{{ $modul ->id}}</th>
                     <td>{{ $modul ->codemod}}</td>
                     <td>{{ $modul ->libmod}}</td>
-                    <td>{{ $modul ->creditmod}}</td>
+                    <td>{{ $modul ->credit}}</td>
                     <td>{{ $modul ->vh_ct}}</td>
                     <td>{{ $modul ->vh_td}}</td>
                     <td>{{ $modul ->vh_tp}}</td>
                     <td>{{ $modul ->poids}}</td>
-                    <td>{{ $modul ->semestre_id}}</td>
-                    <td>{{ $modul ->classe_id}}</td>
-                    <td>{{ $modul ->ue_id}}</td>
+                    <td>{{ $modul ->semestreMod}}</td>
+                    <td>{{ $modul ->ueMod}}</td>
+                    <td>{{ $modul ->enseignantMod}}</td>
                     <td>
                         <form action="" method="POST">
                             <a class="btn btn-info" href="">Voir</a>

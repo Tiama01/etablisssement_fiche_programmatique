@@ -51,7 +51,7 @@
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">Semestre</label>
-                    <select class="form-select" name="semestre_id"  style="width: 100%; height: 36px">
+                    <select class="form-select" name="semestreMod"  style="width: 100%; height: 36px">
                         <option>Select</option>
                         <option>Semestre 1</option>
                         <option>Semestre 2</option>
@@ -64,18 +64,18 @@
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">UE</label>
-                    <select class="form-select bg-body" name="ue_id"  style="width: 100%; height: 36px">
+                    <select class="form-select bg-body" name="ueMod"  style="width: 100%; height: 36px">
                         <option>Select</option>
-                        <option value="Cd">Complexité</option>
-                        <option value="DG">Reseaux Informatique 2</option>
-                        <option value="DG">Algorithme et Programmation</option>
+                        <option>Complexité</option>
+                        <option>Reseaux Informatique 2</option>
+                        <option>Algorithme et Programmation</option>
                         </optgroup>
                     </select>
                 </div>
 
                 <div class="form-group col-md-4" >
                     <label for="exampleInputEmail1">Enseignant</label>
-                    <input type="text" class="form-control" name="enseignant_id" id="prenom" placeholder="Entrez le nom de l'enseignant">
+                    <input type="text" class="form-control" name="enseignantMod" id="prenom" placeholder="Entrez le nom de l'enseignant">
                 </div>
 
 

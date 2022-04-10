@@ -45,10 +45,10 @@ class EnseignantController extends Controller
 
     public function update(Request $request,$id){
         $request->validate([
-            'matricule' => 'required|matricule',
+            'matricule' => 'required',
             'Nom' => 'required',
             'Prenom' => 'required',
-            'mail' => 'required|mail',
+            'mail' => 'required',
             'Telephone' => 'required'
         ]);
         $data=Enseignant::findOrFail($id);

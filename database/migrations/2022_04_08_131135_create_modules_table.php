@@ -22,9 +22,12 @@ return new class extends Migration
             $table->string("vh_td");
             $table->string("vh_tp");
             $table->string("poids");
-            $table->foreignId('enseignant_id')->constrained();
-            $table->foreignId('ue_id')->constrained();
-            $table->foreignId('semestre_id')->constrained();
+            $table->string("enseignantMod");
+            $table->string("ueMod");
+            $table->string("semestreMod");
+            // $table->foreignId('enseignant_id')->constrained();
+            // $table->foreignId('ue_id')->constrained();
+            // $table->foreignId('semestre_id')->constrained();
             // $table->string("codeUE");
             // $table->string("codeEns");
             $table->timestamps();

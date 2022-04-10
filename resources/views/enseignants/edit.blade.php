@@ -96,7 +96,7 @@
 
 
             <div class="form-group col-md-4 my-4">
-                <button type="reset" value="Update"  class="btn btn-warning">Mettre à jour</button>
+                <button type="submit" value="Update"  class="btn btn-warning">Mettre à jour</button>
            </div>
             </div>
 
