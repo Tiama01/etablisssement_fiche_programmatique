@@ -38,6 +38,9 @@
                     <td>{{ $modul ->vh_td}}</td>
                     <td>{{ $modul ->vh_tp}}</td>
                     <td>{{ $modul ->poids}}</td>
+                    <td>{{ $modul ->semestre_id}}</td>
+                    <td>{{ $modul ->classe_id}}</td>
+                    <td>{{ $modul ->ue_id}}</td>
                     <td>
                         <form action="" method="POST">
                             <a class="btn btn-info" href="">Voir</a>

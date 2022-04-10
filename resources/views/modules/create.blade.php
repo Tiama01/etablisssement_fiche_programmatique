@@ -51,14 +51,14 @@
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">Semestre</label>
-                    <select class="form-select" name="enseignant_id"  style="width: 100%; height: 36px">
+                    <select class="form-select" name="semestre_id"  style="width: 100%; height: 36px">
                         <option>Select</option>
-                        <option value="S1">Semestre 1</option>
-                        <option value="S2">Semestre 2</option>
-                        <option value="S3">Semestre 3</option>
-                        <option value="S4">Semestre 4</option>
-                        <option value="S5">Semestre 5</option>
-                        <option value="S6">Semestre 6</option>
+                        <option>Semestre 1</option>
+                        <option>Semestre 2</option>
+                        <option>Semestre 3</option>
+                        <option>Semestre 4</option>
+                        <option>Semestre 5</option>
+                        <option>Semestre 6</option>
                         </optgroup>
                     </select>
                 </div>
@@ -66,26 +66,16 @@
                     <label class="">UE</label>
                     <select class="form-select bg-body" name="ue_id"  style="width: 100%; height: 36px">
                         <option>Select</option>
-                        <option value="Cd">CA</option>
-                        <option value="DG">IPV6</option>
-                        <option value="DG">Proba</option>
+                        <option value="Cd">Complexité</option>
+                        <option value="DG">Reseaux Informatique 2</option>
+                        <option value="DG">Algorithme et Programmation</option>
                         </optgroup>
                     </select>
                 </div>
-                {{-- <div class="form-group col-md-4 ">
-                    <label class="">Classe</label>
-                    <select class="form-select bg-body" name="codemod"  style="width: 100%; height: 36px">
-                        <option>Select</option>
-                        <option value="Cd">MiageL1</option>
-                        <option value="DG">CCA2</option>
-                        <option value="DG">ABF3</option>
-                        </optgroup>
-                    </select>
-                </div> --}}
 
                 <div class="form-group col-md-4" >
                     <label for="exampleInputEmail1">Enseignant</label>
-                    <input type="text" class="form-control" name="libmod" id="prenom" placeholder="Entrez le libellé du module">
+                    <input type="text" class="form-control" name="enseignant_id" id="prenom" placeholder="Entrez le nom de l'enseignant">
                 </div>
 
 

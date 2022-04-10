@@ -33,8 +33,8 @@
                     <td>
 
                         <form action="{{ route('enseignant.delete', ['id'=>$enseignants->id]) }}" method="POST">
-                            <a class="btn btn-info" href="{{ route('enseignant.show') }}">Voir</a>
-                            <a class="btn btn-primary" href="{{ url('enseignant.edit'.$enseignants->id) }}">Modifier</a>
+                            <a class="btn btn-info" href="{{ route('enseignant.show', ['id'=>$enseignants->id]) }}">Voir</a>
+                            <a class="btn btn-primary" href="{{ route('enseignant.edit', ['id'=>$enseignants->id]) }}">Modifier</a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Supprimer</button>

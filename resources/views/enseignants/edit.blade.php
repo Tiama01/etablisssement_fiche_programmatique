@@ -11,8 +11,9 @@
         <div class="container-fluid">
         <div class="card card-default">
             <div class="card-body">
-        <form action="{{ route('enseignant.update' .$data->id ) }}" method="POST">
-            {!! csrf_field() !!}
+        <form action="{{ route('enseignant.update' , ['id'=>$data->id] ) }}" method="POST">
+            @csrf
+            @method('PUT')
             <div class="row">
                 <div class="row">
                 <div class="form-group col-md-6" >
@@ -95,8 +96,7 @@
 
 
             <div class="form-group col-md-4 my-4">
-                <button type="reset" value="Update"  class="btn btn-warning">Enregistrer</button>
-                <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                <button type="reset" value="Update"  class="btn btn-warning">Mettre à jour</button>
            </div>
             </div>
 

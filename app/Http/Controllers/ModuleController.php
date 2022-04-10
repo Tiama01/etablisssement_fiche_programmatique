@@ -41,8 +41,8 @@ class ModuleController extends Controller
     public function store(Request $request)
     {
         //
+
         Module::create($request->all());
-        dd($request->all());
         return redirect()->route("module.index")->with('flash_message', 'module Addedd!');
 
 
