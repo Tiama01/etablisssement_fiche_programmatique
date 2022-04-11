@@ -38,6 +38,9 @@ Route::get('/modules/create', [ModuleController::class, 'create'])->name('module
 Route::post('/modules/store', [ModuleController::class, 'store'])->name('module.store');
 Route::get('/modules/index', [ModuleController::class, 'index'])->name('module.index');
 Route::get('/modules/fiche', [ModuleController::class, 'fiche'])->name('module.fiche');
+Route::get('/modules/edit/{id}', [ModuleController::class, 'edit'])->name('module.edit');
+Route::get('/modules/update/{id}', [ModuleController::class, 'update'])->name('module.update');
+Route::delete('/modules/delete/{id}', [ModuleController::class, 'delete'])->name('module.delete');
 
 
 // Auth::routes();

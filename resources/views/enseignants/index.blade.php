@@ -9,7 +9,10 @@
 @endsection
 
 @section('content')
-<div class="container-fluid">
+<div class="wrapper">
+
+
+<div class="container-fluid vertical-scrollable">
 
     <table class="table table-bordered">
         <thead>
@@ -47,5 +50,6 @@
 
         </tbody>
     </table>
+</div>
 </div>
 @endsection

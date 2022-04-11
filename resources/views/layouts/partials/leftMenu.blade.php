@@ -59,14 +59,14 @@
     <li class="nav-item">
         <a class="nav-link" href="{{ route('module.create') }}">
             <i class="fas fa-book-open"></i>
-            <span>Ajout de modules</span></a>
+            <span>Ajouter un module</span></a>
     </li>
 
 
     <li class="nav-item">
         <a class="nav-link" href="{{ route('module.index') }}">
             <i class="fas fa-book"></i>
-            <span>Lister les modules</span></a>
+            <span>Afficher la liste des modules</span></a>
     </li>
 
 
@@ -82,7 +82,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('enseignant.cours') }}">
+        <a class="nav-link" href="">
             <i class="fas fa-file-pdf"></i>
             <span>Voir les fiches Programmatiques</span></a>
     </li>

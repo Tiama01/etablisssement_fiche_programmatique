@@ -51,8 +51,8 @@
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">Semestre</label>
-                    <select class="form-select" name="semestreMod"  style="width: 100%; height: 36px">
-                        <option>Select</option>
+                    <select class="form-control" name="semestreMod"  style="width: 100%; height: 36px">
+                        <option>Choisir</option>
                         <option>Semestre 1</option>
                         <option>Semestre 2</option>
                         <option>Semestre 3</option>
@@ -64,11 +64,12 @@
                 </div>
                 <div class="form-group col-md-4 ">
                     <label class="">UE</label>
-                    <select class="form-select bg-body" name="ueMod"  style="width: 100%; height: 36px">
-                        <option>Select</option>
+                    <select class="form-control" name="ueMod"  style="width: 100%; height: 36px">
+                        <option>Choisir</option>
                         <option>Complexité</option>
-                        <option>Reseaux Informatique 2</option>
+                        <option>Langage et communication</option>
                         <option>Algorithme et Programmation</option>
+                        <option>Physique</option>
                         </optgroup>
                     </select>
                 </div>

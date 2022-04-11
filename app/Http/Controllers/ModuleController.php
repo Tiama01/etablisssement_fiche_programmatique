@@ -72,11 +72,9 @@ class ModuleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-        $mod = module::find($id);
-        return view('read', ['articles' => $mod]);
+    public function edit($id){
+        $upmod=Module::findOrFail($id);
+        return view('modules.edit',compact('upmod'));
     }
 
     /**
@@ -86,35 +84,41 @@ class ModuleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(module $upmod, $id)
-    {
-        //
-        $upmod->validate([
-
-            'siglmod' => 'required',
-
+    public function update(Request $request,$id){
+        $request->validate([
+            'codemod' => 'required',
             'libmod' => 'required',
-
-            'creditmod' => 'required',
-
+            'credit' => 'required',
             'vh_ct' => 'required',
-
             'vh_td' => 'required',
-
             'vh_tp' => 'required',
-
             'poids' => 'required',
+            'enseignantMod' => 'required',
+            'ueMod' => 'required',
+            'semestreMod' => 'required'
 
         ]);
-        return redirect()->route('modules.index')->with('success','Product updated successfully');
+        $upmod=Module::findOrFail($id);
+        $upmod ->codemod = $request->get ('codemod');
+        $upmod ->libmod = $request->get ('libmod');
+        $upmod ->credit = $request->get ('credit');
+        $upmod ->vh_ct = $request->get ('vh_ct');
+        $upmod ->vh_td = $request->get ('vh_td');
+        $upmod ->vh_tp = $request->get ('vh_tp');
+        $upmod ->poids = $request->get ('poids');
+        $upmod ->enseignantMod = $request->get ('enseignantMod');
+        $upmod ->ueMod = $request->get ('ueMod');
+        $upmod ->semestreMod = $request->get ('semestreMod');
+        $upmod ->save();
+        return redirect()->route('module.index')->with('mise à jour reussi');
+        // return redirect()->route("enseignants.index");
     }
 
 
-    public function destroy(Request $request)
-
-    {
-
-        return view('module.fiche');
+    public function delete($id){
+        $data= Module::where('id',$id);
+        $data->delete();
+        return redirect()->route("module.index");
     }
 
 

@@ -42,9 +42,8 @@
                     <td>{{ $modul ->ueMod}}</td>
                     <td>{{ $modul ->enseignantMod}}</td>
                     <td>
-                        <form action="" method="POST">
-                            <a class="btn btn-info" href="">Voir</a>
-                            <a class="btn btn-primary" href="">Modifier</a>
+                        <form action="{{ route('module.delete', ['id'=>$modul->id]) }}" method="POST">
+                            <a class="btn btn-primary" href="{{ route('module.edit', ['id'=>$modul->id]) }}">Modifier</a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Supprimer</button>

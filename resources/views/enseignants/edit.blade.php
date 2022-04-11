@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group col-md-6 ">
                     <label class="">Sexe</label>
-                    <select class="select2 form-select" name="Sexe" value="{{ $data->Sexe }}" style="width: 100%; height: 36px">
+                    <select class="form-control" name="Sexe" value="{{ $data->Sexe }}" style="width: 100%; height: 36px">
                         <option value="Cd">M</option>
                         <option value="DG">F</option>
                         </optgroup>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="form-group col-md-6 ">
                     <label class="">Grade</label>
-                    <select class="form-select" name="grade" value="{{ $data->grade }}" style="width: 100%; height: 36px">
+                    <select class="form-control" name="grade" value="{{ $data->grade }}" style="width: 100%; height: 36px">
 
                         <option value="Cd">Docteur</option>
                         <option value="DG">Professeur</option>
@@ -62,7 +62,7 @@
 
                 <div class="form-group col-md-6 ">
                     <label class="">Type</label>
-                    <select class="select2 form-select" name="type" value="{{ $data->type }}" style="width: 100%; height: 36px">
+                    <select class="form-control" name="type" value="{{ $data->type }}" style="width: 100%; height: 36px">
 
                         <option value="Cd">Titulaire</option>
                         <option value="DG">Pas Titulaire</option>

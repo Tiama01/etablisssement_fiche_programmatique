@@ -40,7 +40,7 @@
                 <div class="my-6">...................................................................</div>
 
                     </div>
-                     <div class="my-5">Année universitaire 2021/2022</div>
+                     <div class="my-5">Année universitaire 20........./20..........</div>
                  </p>
             </div>
         </div>
@@ -56,28 +56,24 @@
 	<div class="container ">
     		<div class="col-md-12 ">
     			<div class="row">
-    			<div class="col-5 my-3">Nom:                                OUEDRAOGO</div>
-    		   <div class="col-6 my-3"> Prénom(s):       Yasmine</div>
+    			<div class="col-5">Nom:.............................................................................................................</div>
+    		   <div class="col-6"> Prénom(s):...............................................................................................................................................</div>
     			</div>
-                <div class="row my-3">
-                    <div class="col-3">Diplome(s):           Doctorat</div>
-                    <div class="col-4">Grade:              Docteur</div>
-                    <div class="col-5">Date de Nomination:      21/05/2020</div>
+                <div class="row">
+                    <div class="col-3">Diplome(s):......................................................</div>
+                    <div class="col-4">Grade:............................................................................</div>
+                    <div class="col-5">Date de Nomination:......................................................................</div>
                 </div>
 
-                <div class="row my-3">
-                    <div class="col-3">Volume horaire statuaire:100 heures</div>
-                    <div class="col-2">Abattement:25 %</div>
-                    <div class="col-7">Volume horaire obligatoire après abattement:75 heures</div>
+                <div class="row">
+                    <div class="col-4">Volume horaire statuaire:......................................................</div>
+                    <div class="col-2">Abattement:.......................</div>
+                    <div class="col-7">Volume horaire obligatoire après abattement::......................................................................</div>
                 </div>
-    			<div class="row my-3">
-                    <div class="col-md-5">Motif de l'abattement:Directeur</div>
-    			    <div class="col-md-6">Etablissement de rattachement administratif : IAM</div>
-                </div>
-                <div class="row my-3">
-                    <div class="col-5">Etablissement bénéficiaire des enseignements : IBAM</div>
-    			    <div class="col-5">Mois et semaines d'exécution des heures:    12/04 au 17/05</div>
-                </div>
+    			<div>Motif de l'abattement:.................................................................................................................................................................................................................................................................................................................</div>
+    			<div>Etablissement de rattachement administratif : IBAM</div>
+    			<div>Etablissement bénéficiaire des enseignements : IBAM</div>
+    			<div>Mois et semaines d'exécution des heures:..........................................................................................................................................................................................................................................................................</div>
 
     	</div>
     </div>
